@@ -5,8 +5,8 @@
     src = ../.;
     cargoLock.lockFile = ../Cargo.lock;
     meta = with lib; {
-      description = config.description;
-      homepage = "https://github.com/StckOverflw/railboard-api";
+      description = "API for german public transport data and backend for github.com/louboecker/railboard";
+      homepage = "https://github.com/louboecker/railboard-api";
       license = licenses.gpl3;
     };
     
