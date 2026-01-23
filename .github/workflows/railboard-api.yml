@@ -28,8 +28,8 @@ jobs:
         with:
           push: true
           tags: |
-            ghcr.io/emmaboecker/railboard-api:${{ github.sha }}
-            ghcr.io/emmaboecker/railboard-api:latest
+            ghcr.io/louboecker/railboard-api:${{ github.sha }}
+            ghcr.io/louboecker/railboard-api:latest
           platforms: linux/amd64
           cache-from: type=gha
           cache-to: type=gha,mode=max
