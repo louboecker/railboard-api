@@ -112,7 +112,7 @@ impl Cache for RedisCache {
             .ignore()
             .expire(&key, expiration)
             .ignore()
-            .query_async(&mut connection)
+            .query_async::<_, ()>(&mut connection)
             .await?;
         Ok(())
     }
